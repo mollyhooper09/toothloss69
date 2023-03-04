@@ -3,31 +3,25 @@
   <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
   <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
 	<title>buttongroup</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     
-      <embed src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/hoopsdrone.mp3?v=1677839769305" loop="true" autostart="true" width="2"
-         height="0">
-    
-    <a-scene>
+  <a-scene>
+  <a-assets>
+    <video id="#myvideo" autoplay loop="true" src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/chapter%205%20colour.mp4?v=1677838061755"></video>
+  </a-assets>
+
+    <a-video src="#myvideo" width="16" height="9" position="0 0 -20"></a-video>
+      
   <a-assets>
     <img id="mouth"  src="https://cdn.glitch.global/a2739790-aec3-4e1c-9f51-141e4fb3d4fa/benmouth.JPG?v=1677706250569">
   </a-assets>
 
-  <!-- Using the asset management system. -->
-  <a-videosphere src="#mouth"></a-videosphere>
-
-  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-  <a-videosphere preload="auto" src="https://cdn.glitch.global/a2739790-aec3-4e1c-9f51-141e4fb3d4fa/benmouth.JPG?v=1677706250569"></a-videosphere>
-
-  <a-assets>
-    
-    <video id="#myvideo" autoplay loop="true" src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/chapter%205%20colour.mp4?v=1677838061755"></video>
-  </a-assets>
- <a-video src="#myvideo" width="16" height="9" position="0 0 -20"></a-video>
+  <a-videosphere preload="auto" src="https://cdn.glitch.global/a2739790-aec3-4e1c-9f51-141e4fb3d4fa/benmouth.JPG?v=1677706250569" webkit-playsinline></a-videosphere>
 </a-scene>
     
   </body>
