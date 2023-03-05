@@ -9,7 +9,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-
+  <a-scene>
+    <a-assets>
+        <video id="video1" loop crossorigin="anonymous" webkit-playsinline playsinline>
+        <source src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/chapter%205%20colour.mp4?v=1677838061755"/>
+        </video>
+    </a-assets>
+    <a-entity aframe-multi-video-component="src: #video1; time: 200; duration: 5; volume: 0.5; autoplay:true;"></a-entity>
+  </a-scene>
+    
     
     
     
