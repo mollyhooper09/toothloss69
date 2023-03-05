@@ -9,14 +9,24 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-  <a-scene>
-    <a-assets>
-        <video id="video1" loop crossorigin="anonymous" webkit-playsinline playsinline>
-        <source src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/chapter%205%20colour.mp4?v=1677838061755"/>
-        </video>
-    </a-assets>
-    <a-entity aframe-multi-video-component="src: #video1; time: 200; duration: 5; volume: 0.5; autoplay:true;"></a-entity>
+
+    <a-scene>
+  <a-assets>
+  
+  <video id="grinding" width="320" height="240">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/ogg">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </video>
+    
+  <img id="mouth"  src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/editedmouth.jpg?v=1677849135636">
+  </a-assets>
+      
+  <a-video src="#grinding" width="16" height="9" position="0 0 -20" controls></a-video>
+
+  <a-sky src="#mouth"></a-sky>  
   </a-scene>
+      
     
     
     
